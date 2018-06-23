@@ -25,6 +25,7 @@ MongoClient.connect('mongodb://localhost:27017/TodoApp', (err, db)=>{
 
   db.collection('Users').find({name: 'Ashley'}).toArray().then((count)=> {
     console.log(JSON.stringify(count, undefined, 2));
+    //Just adding some shit
   }, (err) => {
     console.log("Unable to fetch to dos", err);
   });
